@@ -1,6 +1,7 @@
 <?php
-echo phpinfo();
-exit;
+Redis::set('name', 'huangsike');
+$c = dd(Redis::get('name'));
+exit(var_dump($c));
 
 /**
  * Laravel - A PHP Framework For Web Artisans

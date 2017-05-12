@@ -39,9 +39,9 @@ return [
         ],
 
         'database' => [
-            'driver' => 'database',
+            'driver' => 'redis',
             'table' => 'cache',
-            'connection' => null,
+            'connection' => 'default',
         ],
 
         'file' => [
